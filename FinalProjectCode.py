@@ -31,7 +31,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 streamlit_path = "C:/Users/alexu/PycharmProjects/pythonProject/venv/pythonprojectshw/FinalProject/FinalProjectCode.py"
 path = "C:/Users/alexu/PycharmProjects/pythonProject/venv/pythonprojectshw/FinalProject/stores.csv"
-df_store = pd.read_csv(path, nrows= 10000)
+df_store = pd.read_csv("stores.csv", nrows= 10000)
 df_store.dropna(subset=['Street1'], inplace=True)
 def count_country_occurrences(df):
     country_counts = df['CountryCode'].value_counts().reset_index()
